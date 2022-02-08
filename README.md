@@ -43,8 +43,9 @@ MariaDB [mysql]> quit
 
 ### Step 6: Stop and start the MySQL service
 
-```
 Stop mariadb service
+```
+service mariadb stop
 
 ```
 
