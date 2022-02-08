@@ -64,3 +64,23 @@ Test the new password by logging in to the database.
 mysql -u root -p
 
 ```
+
+
+## mysql database backup and restore
+
+### BACKUP
+
+```
+mysqldump -u username -p dbname > /dbback/dbname.sql
+mysqldump -u username -p --all-databases > /dbback/allbdback.sql
+
+```
+
+### Restore
+
+```
+create databse dbname;
+mysqldump -u username -p dbname < /dbback/dbname.sql
+
+```
+
